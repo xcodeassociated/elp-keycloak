@@ -1,4 +1,4 @@
-# Spochi Keycloak
+# ELP Keycloak
 _Custom keycloak service_
 
 ## Keycloak Kafka Module
@@ -30,7 +30,7 @@ mvn clean package
 ```
 ### Build entire custom keycloak container
 ```bash
-mvn clean package && docker build --no-cache -t xcodeassociated/spochi-keycloak:0.0.1 .
+mvn clean package && docker build --no-cache -t xcodeassociated/elp-keycloak:0.0.1 .
 ```
 
 ## Installation
