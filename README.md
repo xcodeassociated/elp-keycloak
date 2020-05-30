@@ -1,4 +1,7 @@
-# Keycloak Kafka Module
+# Spochi Keycloak
+_Custom keycloak service_
+
+## Keycloak Kafka Module
 Simple module for [Keycloak](https://www.keycloak.org/) to produce keycloak events to [Kafka](https://kafka.apache.org/).
 
 - [Keycloak Kafka Module](#keycloak-kafka-module)
@@ -27,7 +30,7 @@ mvn clean package
 ```
 ### Build entire custom keycloak container
 ```bash
-mvn clean package && docker build --no-cache -t xcodeassociated/keycloak:0.0.2 .
+mvn clean package && docker build --no-cache -t xcodeassociated/spochi-keycloak:0.0.1 .
 ```
 
 ## Installation
