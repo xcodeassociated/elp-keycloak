@@ -512,11 +512,11 @@
             <spi name="eventsListener">
                 <provider name="kafka" enabled="true">
                     <properties>
-                        <property name="topicEvents" value="keycloak-events"/>
-                        <property name="clientId" value="keycloak"/>
-                        <property name="bootstrapServers" value="dev-kafka-broker-1:9092"/>
+                        <property name="topicEvents" value="${keycloak.kafka.topic.events}"/>
+                        <property name="clientId" value="${keycloak.kafka.clientid}"/>
+                        <property name="bootstrapServers" value="${keycloak.kafka.bootstrapserver}"/>
                         <property name="events" value="REGISTER,LOGIN,LOGOUT"/>
-                        <property name="topicAdminEvents" value="keycloak-admin-events"/>
+                        <property name="topicAdminEvents" value="${keycloak.kafka.topic.admin}"/>
                     </properties>
                 </provider>
             </spi>
