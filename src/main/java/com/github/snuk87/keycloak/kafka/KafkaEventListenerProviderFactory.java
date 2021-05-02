@@ -42,6 +42,7 @@ public class KafkaEventListenerProviderFactory implements EventListenerProviderF
 		topicAdminEvents = System.getenv("KEYCLOAK_KAFKA_TOPIC_ADMIN"); //config.get("topicAdminEvents");
 		clientId = System.getenv("KEYCLOAK_KAFKA_CLIENTID"); //config.get("clientId", "keycloak");
 		bootstrapServers = System.getenv("KEYCLOAK_KAFKA_BOOTSTRAPSERVER"); //config.get("bootstrapServers");
+		LOG.info(">>> Init kafka module >> env read successes!");
 
 		String eventsString = config.get("events");
 

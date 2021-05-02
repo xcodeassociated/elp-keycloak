@@ -11,7 +11,8 @@ ADD ./kafka-clients/module.xml /opt/jboss/keycloak/modules/system/layers/keycloa
 ADD ./keycloak-config/standalone.xml /opt/jboss/keycloak/standalone/configuration/
 ADD ./keycloak-config/kafka-module.cli /opt/jboss/startup-scripts/
 
-#ADD realm-export.json /init/
+## commend out for local
+ADD realm-export.json /init/
 
 # to prevent 'java.nio.file.DirectoryNotEmptyException: /opt/jboss/keycloak/standalone/configuration/standalone_xml_history/current' on startup
 RUN rm -rf /opt/jboss/keycloak/standalone/configuration/standalone_xml_history
